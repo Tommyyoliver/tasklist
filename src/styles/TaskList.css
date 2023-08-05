@@ -1,0 +1,39 @@
+.tasklist {
+    width: 90%;
+    max-width: 500px;
+    margin: 30px auto 100px auto;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.btn-add {
+    margin: 30px 0;
+    z-index: 300;
+    position: fixed;
+    bottom: 0;
+    left: calc(50% - 18px);
+    width: 30px;
+    padding: 6px;
+    background-color: #fafafa;
+    border: 4px solid #010101;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.btn-add-background {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 500px;
+    height: 50px;
+    background-color: #fafafa;
+    z-index: 200;
+    border-top: 2px solid #010101;
+}
+
+.tasklist-empty {
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+    color: #ababab;
+}

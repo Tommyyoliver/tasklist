@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif, Arial, Helvetica;
+    background-color: #fafafa;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.app {
+    max-width: 500px;
+    margin: 0 auto;
+    height: 100vh;
+    box-shadow: 0px 0px 5px 1px #dadada;
+}
+
+.app-header {
+    max-width: 500px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+
+    > h1 {
+        font-size: 2rem;
+        font-weight: bolder;
+    }
+}
