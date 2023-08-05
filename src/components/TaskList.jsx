@@ -13,13 +13,13 @@ function TaskList() {
 
     const initialState = []
     const [showPortal, setShowPortal] = useState('portal notActive')
-    const [task, dispath] = useReducer(reducer, initialState)
-    // const [task, dispath] = useReducer(reducer, JSON.parse(localStorage.getItem('taskV5')) ? JSON.parse(localStorage.getItem('taskV5')) : initialState)
+    // const [task, dispath] = useReducer(reducer, initialState)
+    const [task, dispath] = useReducer(reducer, JSON.parse(localStorage.getItem('taskV5')) ? JSON.parse(localStorage.getItem('taskV5')) : initialState)
 
 
-    // useEffect(() => {
-    //     localStorage.setItem('taskV5', JSON.stringify(task))
-    // }, [ task ])
+    useEffect(() => {
+        localStorage.setItem('taskV5', JSON.stringify(task))
+    }, [ task ])
 
 
     const addTask = () => {
